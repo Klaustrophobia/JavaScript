@@ -37,6 +37,62 @@
 
     const declarations always need an initializer, because they forbid any kind of assignment after declaration, and implicitly initializing it with undefined is likely a programmer mistake.
 
+<table class="standard-table">
+  <thead>
+    <tr>
+      <th scope="row">Variable</th>
+      <th scope="col">Explanation</th>
+      <th scope="col">Example</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row"><a href="/en-US/docs/Glossary/String">String</a></th>
+      <td>
+        This is a sequence of text known as a string. To signify that the value
+        is a string, enclose it in single or double quote marks.
+      </td>
+      <td><code>let myVariable = 'Bob';</code> or<br><code>let myVariable = "Bob";</code></td>
+    </tr>
+    <tr>
+      <th scope="row"><a href="/en-US/docs/Glossary/Number">Number</a></th>
+      <td>This is a number. Numbers don't have quotes around them.</td>
+      <td><code>let myVariable = 10;</code></td>
+    </tr>
+    <tr>
+      <th scope="row"><a href="/en-US/docs/Glossary/Boolean">Boolean</a></th>
+      <td>
+        This is a True/False value. The words <code>true</code> and
+        <code>false</code> are special keywords that don't need quote marks.
+      </td>
+      <td><code>let myVariable = true;</code></td>
+    </tr>
+    <tr>
+      <th scope="row"><a href="/en-US/docs/Glossary/Array">Array</a></th>
+      <td>
+        This is a structure that allows you to store multiple values in a single
+        reference.
+      </td>
+      <td>
+        <code>let myVariable = [1,'Bob','Steve',10];</code><br>Refer to each
+        member of the array like this:<br><code>myVariable[0]</code>,
+        <code>myVariable[1]</code>, etc.
+      </td>
+    </tr>
+    <tr>
+      <th scope="row"><a href="/en-US/docs/Glossary/Object">Object</a></th>
+      <td>
+        This can be anything. Everything in JavaScript is an object and can be
+        stored in a variable. Keep this in mind as you learn.
+      </td>
+      <td>
+        <code>let myVariable = document.querySelector('h1');</code><br>All of
+        the above examples too.
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 ## Variable scope
 
     A variable may belong to one of the following scopes:
