@@ -112,6 +112,96 @@
     var-declared variables are hoisted, meaning you can refer to the variable anywhere in its scope, even if its declaration isn't reached yet. You can see var declarations as being "lifted" to the top of its function or global scope. However, if you access a variable before it's declared, the value is always undefined, because only its declaration is hoisted, but not its initialization.
 
 ## Control Flow
+    Control flow in JavaScript refers to the order in which statements are executed in a script. JavaScript provides several control flow statements to direct the flow of your code, including conditionals, loops, and branching statements. Here's an overview of key control flow structures in JavaScript:
 
+### 1. Conditionals:
+#### if Statement:
     
+    if (condition) {
+        // code to be executed if the condition is true
+    } else {
+        // code to be executed if the condition is false
+    }
+
+#### else if Statement:
+
+    if (condition1) {
+        // code to be executed if condition1 is true
+    } else if (condition2) {
+        // code to be executed if condition2 is true
+    } else {
+        // code to be executed if none of the conditions are true
+    }
+
+#### switch Statement:
+
+    switch (expression) {
+        case value1:
+            // code to be executed if expression matches value1
+            break;
+        case value2:
+            // code to be executed if expression matches value2
+            break;
+        default:
+            // code to be executed if none of the cases match
+    }
+
+### 2. Loops:
+#### for Loop:
+
+    for (initialization; condition; update) {
+        // code to be executed in each iteration
+    }
+#### while Loop:
+
+    while (condition) {
+        // code to be executed as long as the condition is true
+    }
+
+#### do...while Loop:
+
+    do {
+        // code to be executed at least once and then repeatedly as long as the condition is true
+    } while (condition);
+
+#### for...in Loop (Iterating over object properties):
+
+    for (variable in object) {
+        // code to be executed for each property in the object
+    }
+
+#### for...of Loop (Iterating over iterable objects like arrays):
+
+    for (variable of iterable) {
+        // code to be executed for each element in the iterable
+    }
+
+### 3. Branching Statements:
+    break: Used to terminate a loop or switch statement.
+
+    continue: Skips the rest of the code inside a loop and moves to the next iteration.
+
+    return: Exits a function and optionally returns a value to the caller.
+    
+    let number = 7;
+
+    if (number > 10) {
+        console.log("The number is greater than 10.");
+    } else if (number > 5) {
+        console.log("The number is greater than 5.");
+    } else {
+        console.log("The number is 5 or less.");
+    }
+
+    for (let i = 0; i < 5; i++) {
+        console.log("Iteration " + i);
+    }
+
+    let colors = ['red', 'green', 'blue'];
+    for (let color of colors) {
+        console.log("Color: " + color);
+    }
+    
+    This example includes if statements, a for loop, and a for...of loop. The control flow is determined by the conditions specified in these statements. Understanding and effectively using control flow structures is fundamental to writing structured and meaningful JavaScript code.
+        
 
