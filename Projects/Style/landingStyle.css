@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.custom-carousel-img {
+    height: 80vh; /* Ajusta este valor según tus necesidades */
+    object-fit: cover; /* Asegura que la imagen cubra el área del carrusel */
+    width: 100%;
+}
+
+
